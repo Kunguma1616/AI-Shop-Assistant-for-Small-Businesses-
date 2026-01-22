@@ -1,0 +1,21 @@
+{
+  "name": "ai-shop-assistant",
+  "version": "1.0.0",
+  "description": "AI-driven business application for small businesses",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev:frontend & npm run dev:backend",
+    "dev:frontend": "cd frotend && npm run dev",
+    "dev:backend": "cd backend && python main_api.py",
+    "build": "npm run build:frontend",
+    "build:frontend": "cd frotend && npm run build",
+    "lint": "npm run lint:frontend",
+    "lint:frontend": "cd frotend && npm run lint",
+    "test": "npm run test:frontend",
+    "test:frontend": "cd frotend && npm run test"
+  },
+  "workspaces": [
+    "frotend",
+    "backend"
+  ]
+}
